@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.navigation {
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    width: 30%;
+    left: -300px
+}
+
+.animation {
+    animation-name: sideAnimation;
+    animation-duration: 0.75s;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 35px;
+    display: block;
+    padding: 8px 8px 8px 32px;
+    color: white;
+   
+}
+
+@keyframes sideAnimation  {
+    from {
+        left: -300px;
+
+    }   
+    
+    to {
+        left: 0px;
+    }
+}

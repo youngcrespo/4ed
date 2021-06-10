@@ -1,0 +1,62 @@
+.body {
+    margin:0
+}
+
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(13, 26, 44, 0.8);
+    top: 0;
+    padding-top: 100px;
+    
+}
+.modal-content {
+    position: relative;
+    width: 80%;
+    background-color: white;
+    height: 260px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.modal-header{
+    background-color:  aquamarine;
+    padding: 12px 16px;
+}
+
+.modal-header h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.close-modal {
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.close-modal:hover {
+    cursor: pointer;
+    color: red;
+    font-weight: bolder;
+}
+
+.modal-body {
+    padding: 0px 16px;
+    margin-bottom: 16px;
+}
+
+.modal-footer-button {
+    float: right;
+    border: 0;
+    padding: 8px;
+    
+}
+
+.modal-footer {
+    position: relative;
+    bottom: 0;
+}
