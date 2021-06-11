@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    margin-top: 10px;
+}
+
+.blue-box{
+    height: 120px;
+    background-color: blue;
+    width: 30%;
+    margin-left: 10px;
+}
+
+.orange-box{
+    height: 120px;
+    background-color: orange;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.red-box{
+    height: 360px;
+    background-color: red;
+    margin: 10px;
+}
+
+.yellow-box{
+    height: 180px;
+    background-color: yellow;
+    width: 100%;
+}
+
+.yellow-box:nth-child(odd) {
+    margin: 10px;
+}
+
+.yellow-box:nth-child(even) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.purple-box {
+    height: 120px;
+    background-color:magenta;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .features{
+        display:flex;
+    }
+    .yellow-box:nth-child(even) {
+        margin-top: 10px;
+    }
+}
