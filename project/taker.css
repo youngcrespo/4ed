@@ -1,0 +1,267 @@
+body {
+    margin:0;
+    background-image: url(https://cdn.discordapp.com/attachments/287309079574085635/856696074827202580/website_bg.png);
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    
+
+    
+}
+
+header {
+    position: fixed;
+    position:0;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    
+}
+
+h1 {
+    position: absolute;
+    display: flex;
+    color: rgb(243, 50, 50);
+    background-color: transparent;
+    height: 90px;
+    padding-left: 50px;
+    align-items: center;
+    text-align: center;
+    padding-right: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    margin: 0
+    
+}
+
+h2{
+    color: white;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+    transform: scale(1.2, 2);
+    
+}
+
+h3{
+    text-align: center;
+    color: rgb(202, 202, 202);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: 'Anton', sans-serif;
+    font-weight: lighter;
+    max-width: 600px;
+}
+.headerbox {
+    height: 90px;
+    background-color: rgb(51,51,51);
+    width: 100%;
+}
+
+.open{
+    display: none;
+}
+
+.headerbuttons{
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    height: 90px;
+    
+}
+
+.button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    transition: 500ms;
+    height: 100%;
+    margin:0;
+    cursor: pointer;
+    
+}
+
+.button:hover{
+    background-color: rgb(160, 44, 44);
+}
+
+.content{
+    position: relative; top: 120px;
+    background-color: rgb(80, 80, 80);
+    padding: 40px;
+    padding-bottom: 0px;
+    max-width: 550px;
+    border: 200px;
+    align-items: center;
+    margin: auto;
+}
+
+img{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+
+.navigation {
+    max-width: 600px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.nav {
+    background-color: rgb(51, 51, 51);
+    border: none;
+    color: white;
+    font-family: 'Libre Baskerville', serif;;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px 30px 20px 30px;
+    transition: 500ms;
+    cursor:pointer;
+}
+
+.nav:hover{
+    background-color: rgb(160, 44, 44);
+}
+
+.footer{
+    position: absolute 0px;
+    background: rgb(51, 51, 51);
+    height: 150px;
+    padding-bottom: 50px;
+    border-top: 100px;
+    margin-top: 100px;
+    transform: translateY(80px);
+    display: flex;
+    align-items:flex-end;
+}
+
+.footerbuttons{
+    position:  relative; left: 20px;
+    border: none;
+    max-width: 80px;
+    max-height: 80px;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.footerbuttons:hover{
+    background-color: rgb(160, 44, 44);
+}
+
+    /* R E S P O N S I V E */
+
+        @media only screen and (max-width: 900px){
+            body {
+                background: black;
+                height: auto;
+                max-width: 900px;
+            }
+            .header{
+                position: fixed;
+                position: 0;
+                max-width: inherit
+
+            }
+            h1{
+                position: relative; top: 0px; left: 15px;
+                font-size: 40px;
+                text-align: left;
+                padding:0;
+                margin: 0;
+                max-height: 60px;
+                z-index: 2;
+            }
+            h2{
+                font-size: 14px;
+            }
+            .headerbox{
+                position: fixed;
+                height: 60px;
+                width: 900px;
+                z-index: 1;
+            }
+            .open{
+                position:fixed;
+                    right: 15px;
+                visibility: visible;
+                z-index: 2;
+                max-height: 60px;
+                max-width: 60px;
+                display: inline-block;
+                background: transparent;
+                border: 0;
+                margin-left: 40px;
+                padding-bottom: 6px;
+                padding-top: 6px;
+                
+            }
+            
+            .content{
+                max-width: fit-content;
+                margin-bottom: 50px;
+            }
+
+            .nav{
+                padding: 10px;
+                margin: 10px;
+            }
+            .footer{
+                background: lightcoral;
+                color: khaki;
+                height: 50px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .content{
+                position: relative; top: 80px;
+            }
+            .headerbuttons{
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: -200px;
+                right: 0px;
+                background: rgb(51,51,51);
+                height: auto;
+                width: 50%;
+                z-index: 2;
+            }
+            .button{
+                width: 100%;
+            }           
+            .animation{
+                animation-name: navimation;
+                animation-duration: 0.75s;
+            }
+            
+            @keyframes navimation  {
+                from {
+                    top: -200px;
+            
+                }   
+                
+                to {
+                    top: 60px;
+                }
+        
+            
+        }
+        }
